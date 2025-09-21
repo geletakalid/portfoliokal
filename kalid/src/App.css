@@ -1,0 +1,108 @@
+body {
+  background-color: #f6f6f6;
+  font-family: 'Fira Code', monospace;
+}
+
+/* Neon Theme */
+.neon-text {
+  color: #00ffcc;
+  text-shadow: 0 0 5px #00ffcc, 0 0 20px #00ffcc;
+}
+
+.text-neon { color: #00ffcc; }
+.bg-neon { background-color: #00ffcc; color: #121212; }
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, #1a1a1a, #000);
+}
+
+
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* Heat-like animated gradient */
+  background: linear-gradient(-45deg, #ff512f, #dd2476, #24c6dc, #514a9d, #4a9d66);
+  background-size: 400% 400%;
+  animation: heatAnimation 15s ease infinite;
+}
+
+@keyframes heatAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Cards with Glass Effect */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 255, 204, 0.2);
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+.glass-card:hover { transform: translateY(-5px); }
+
+/* Navbar */
+.glassy-nav {
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(6px);
+}
+
+/* Buttons */
+.btn-outline-neon {
+  border: 2px solid #00ffcc;
+  color: #00ffcc;
+  transition: 0.3s;
+}
+.btn-outline-neon:hover {
+  background: #00ffcc;
+  color: #121212;
+  box-shadow: 0 0 15px #00ffcc;
+}
+
+/* Sections */
+.section-border {
+  border-top: 1px solid rgba(0, 255, 204, 0.2);
+  border-bottom: 1px solid rgba(0, 255, 204, 0.2);
+}
+
+
+
+
+/* Typing Animation */
+.typing-text {
+  width: 0ch;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #00ffcc;
+  animation: typing 4s steps(40) infinite alternate;
+}
+
+@keyframes typing {
+  from { width: 0ch; }
+  to { width: 40ch; }
+}
+
+/* Fade animation */
+.animate-fade {
+  animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

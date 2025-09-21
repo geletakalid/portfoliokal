@@ -31,7 +31,7 @@ const Hero = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 1 }}
       >
-        Computer Science Student | Cloud & AI Enthusiast 
+        Computer Science Graduate | Cloud & AI Enthusiast 
       </motion.p>
     </div>
   );

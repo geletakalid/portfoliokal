@@ -10,7 +10,7 @@ const Education = () => {
         className="card p-3 shadow mb-3"
       >
         <h5>BSc. Computer Science</h5>
-        <p>Strathmore University, Kenya (2019 - 2025)</p>
+        <p>Strathmore University, Kenya (2021 - 2025)</p>
         <p>Specialization: Software Engineering & AI 🤖</p>
       </motion.div>
     </div>
